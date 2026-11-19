@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergunta 6 - Quiz de Acessibilidade 2</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="cabecalho-acessibilidade">
+        <label for="filtro-daltonismo">Modo de Cor:</label>
+        <select id="filtro-daltonismo" aria-label="Selecione um filtro de cores para daltonismo">
+            <option value="padrao">Padrão</option>
+            <option value="protanopia">Protanopia (Dificuldade com Vermelho)</option>
+            <option value="deuteranopia">Deuteranopia (Dificuldade com Verde)</option>
+            <option value="tritanopia">Tritanopia (Dificuldade com Azul)</option>
+            <option value="alto-contraste">Alto Contraste</option>
+        </select>
+    </header>
+
+    <main>
+        <section class="pergunta-container" aria-labelledby="titulo-pergunta">
+            <h2 id="titulo-pergunta" class="pergunta-texto">A Acessibilidade Digital beneficia apenas pessoas com deficiência?</h2>
+            
+            <div class="respostas-grid" role="group" aria-label="Opções de resposta">
+                <button class="btn-resposta cor-azul" data-proxima="resultado.html">
+                    Verdadeiro
+                </button>
+                
+               
+                <button class="btn-resposta cor-rosa" data-correta="true" data-proxima="resultado.html">
+                    Falso
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    
+    <script src="js/quiz.js"></script>
+</body>
+</html>
+
+<!-- 0% IA --> 
